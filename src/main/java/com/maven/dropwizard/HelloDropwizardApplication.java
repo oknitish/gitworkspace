@@ -9,13 +9,7 @@ import io.dropwizard.setup.Environment;
 
 public class HelloDropwizardApplication extends Application<HelloDropwizardConfiguration> {
 
-    public static void main(final String[] args) throws Exception {
-        
-    	
-    	
-    	
-    	
-    	
+    public static void main(final String[] args) throws Exception {  
     	new HelloDropwizardApplication().run(args);
     }
 
