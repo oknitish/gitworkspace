@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.1//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_1.dtd">
+
+<struts-config>
+	<form-beans>
+		<form-bean name="regform" type="com.com.RegForm"></form-bean>
+
+
+	</form-beans>
+	<global-forwards>
+		<forward name="addstudent" path="/addstudenthome.jsp"></forward>
+		<forward name="updatestudent" path="/updatestudenthome.jsp"></forward>
+		<forward name="updatestudent" path="/updatestudenthome.jsp"></forward>
+		<forward name="deletestudent" path="/deletestudenthome.jsp"></forward>
+
+	</global-forwards>
+	<action-mappings>
+
+		<action path="/RegSubmit" name="regform" type="com.com.RegAction"
+			input="/addstudenthome.jsp">
+			<forward name="success" path="/successhome.jsp"></forward>
+
+		</action>
+
+	</action-mappings>
+	<message-resources parameter="com.com.messages"></message-resources>
+	<plug-in className="org.apache.struts.tiles.TilesPlugin">
+
+		<set-property property="definitions-config" value="/WEB-INF/tiles.xml" />
+	</plug-in>
+</struts-config>
+

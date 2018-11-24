@@ -1,0 +1,32 @@
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 1.3//EN"
+"http://struts.apache.org/dtds/tiles-config_1_3.dtd">
+<tiles-definitions>
+
+<definition name="HomeDef" path="/BaseLayout.jsp">
+<put name="LEFTMENU" value="left.jsp"/>
+<put name="HEADER" value="header.jsp"/>
+<put name="BODY" value=""/>
+<put name="FOOTER" value="footer.jsp"/>
+
+
+</definition>
+
+
+<definition name="HomeDef1" extends="HomeDef">
+<put name="BODY" value="addstudent.jsp"/>
+</definition>
+<definition name="Welcomedef" extends="HomeDef">
+<put name="BODY" value="welcome.jsp"/>
+</definition>
+<definition name="updatestudentdef" extends="HomeDef">
+<put name="BODY" value="updatestudent.jsp"/>
+</definition>
+<definition name="deletestudentdef" extends="HomeDef">
+<put name="BODY" value="deletestudent.jsp"/>
+</definition>
+<definition name="successdef" extends="HomeDef">
+<put name="BODY" value="success.jsp"/>
+</definition>
+
+</tiles-definitions>
